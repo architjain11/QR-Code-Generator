@@ -13,5 +13,5 @@ def index():
 def newQR():
     message = request.args.get('message')
     d = pyqrcode.create(message)
-    d.png('/static/output.png', scale=6)
+    # d.png('/static/output.png', scale=6)
     return render_template("index.html", message=message)
