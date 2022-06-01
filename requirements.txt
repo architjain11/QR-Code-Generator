@@ -1,3 +1,4 @@
 flask
 pyqrcode
 pypng
+gunicorn
