@@ -13,7 +13,7 @@
         <!-- <input type="text" name="msg" autofocus autocomplete="off" placeholder="Enter message" required><br><br> -->
         <input type="submit" value="Generate">
     </form>
-    <img src="/static/output.png" alt="QR Code">
+    <image href="{{ url_for('static', filename='output.png') }}">
     <div>{{message}}</div>
 
 </body>
