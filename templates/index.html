@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>QR Code Generate</title>
+</head>
+<body>
+    
+    <form action="/newQR" method="GET">
+        <textarea rows = "5" cols = "60" name = "message" placeholder = "Enter message here" autofocus autocomplete="off" required></textarea><br><br>
+        <!-- <input type="text" name="msg" autofocus autocomplete="off" placeholder="Enter message" required><br><br> -->
+        <input type="submit" value="Generate">
+    </form>
+    <img src="/output.png" alt="QR Code">
+    <div>{{message}}</div>
+
+</body>
+</html>
