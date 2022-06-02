@@ -7,13 +7,15 @@
     <title>QR Code Generate</title>
 </head>
 <body>
-    
-    <form action="/newQR" method="GET">
-        <textarea rows = "5" cols = "60" name = "message" placeholder = "Enter message here" autofocus autocomplete="off" required></textarea><br><br>
-        <input type="submit" value="Generate">
-    </form>
-    <img src="/static/default.png" alt="QR Code">
+
+    <img src="{{out}}" alt="no new yet">
     <div>{{message}}</div>
+
+    <br><br><hr><br><br>
+    
+    <form action="/" method="GET">
+        <input type="submit" value="Create another">
+    </form>
 
 </body>
 </html>
